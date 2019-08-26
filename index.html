@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Website</title>
+     <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Native Styles -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- AOS library -->
+    <link rel="stylesheet" href="./Assets/aos.css">
+    <!-- Animate.css library -->
+    <link rel="stylesheet" href="./Assets/animate.css">
+</head>
+<body>
+    <nav class = 'nav'>
+        <h1>Emmanuel otobo</h1>
+        <ul>
+            <li class = 'list-item'><a href="#home">Home</a></li>
+            <li class = 'list-item'><a href="#about_me">About Me</a></li>
+            <li class = 'list-item'><a href="#contact">Contact</a></li>
+        </ul>    
+    </nav>
+
+    <div id = 'nav'>
+        <header class = 'bg-img'>
+            <div class = 'mask'></div>
+            <!-- <div class = 'rect'></div> -->
+            <div class = 'headline animated bounceInDown'> Awesome coder | UI/UX designer | Front-end Web Developer</div>
+        </header>
+        
+        <div class="go_to_btn">
+            <span ><a href="#about_me"> <i class="fas fa-arrow-down" id = 'up-down' style = 'font-size: 30px; color: #fff;'></i> </a></span><br>
+        </div>
+
+        <section id = 'desc'>
+            <div id = 'blurb'>
+                
+            </div>
+            <div id = 'main-desc' data-aos = 'zoom-out' data-aos-anchor-placement ="top-center" >
+                I create front-end web experiences like no other, leveraging the capabilities of tried-and-tested front-end web design patterns, and bringing an astonishing level of aesthetics on the web page .
+                <button class = 'btn'><a href="#about_me">Learn More</a></button>
+            </div>
+        </section>
+
+        <section id="about_me" data-aos = 'fade-up' data-aos-anchor="#desc"  >
+            <h2>About Me</h2>
+            <div class="grid_icons">
+                <div><img src="" alt=""></div>
+                <div><img src="" alt=""></div>
+                <div><img src="" alt=""></div>
+            </div>
+            <div class="about_me_text">
+                <p class = 'text_1'>
+                    I am a front-end web developer with a keen eye on designing performant websites and a strong passion for building web-based technologies. With nearly <script> new Date().getFullYear()</script> s of learning how to build websites and architecture other web-based technologies, I have been able to leverage my new found skill to create things I certainly consider magical. I sincerely hope to work with you and help you to get your end-result.  While i mostly work on many fun coding projects, I do enjoy long beach walks and console gaming!            
+                </p>
+
+                <!-- 
+                <p class = 'text_2'>
+                    Check out some of my recently finished projects
+                </p>
+                 -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <p >If you have any project(s) you want me to help create or any form of partnership you'll like me to be in, hit me up! I will love to hear from you.</p>
+            <form action="" class = 'form_fields' netlify>
+                <input type="text" class = 'ff inputField'>
+                <input type="email" class = 'ff inputField'>
+                <textarea  id = 'textField' class = 'ff ' cols="30" rows="2"></textarea>
+                <div class = 'btn-div'><button class = 'submitBtn btn'>Submit</button></div>
+            </form>
+        </section>
+
+    
+        </section>
+    <!--Section: Contact v.2-->
+
+
+
+    <footer>
+       <div> <h3>Emmanuel Otobo</h3></div>
+       <div> <small>Made with <em><3</em>  from NG! </small></div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/86ff87ebc2.js"></script>
+    <script src="./Assets/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="./Assets/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="./Assets/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="./Assets/mdb.min.js"></script>
+    <script src="./Assets/smooth-scroll.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
