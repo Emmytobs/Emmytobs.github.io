@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Website</title>
+    <!-- Native Styles -->
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <!-- Animate.css library -->
+    <link rel="stylesheet" href="./Assets/animate.css">
+</head>
+
+<body>
+    
+        <header class = 'bg-img' id = 'home'>
+            <div class = 'mask'></div>
+            <!-- <div class = 'rect'></div> -->
+        <div class = 'headline animated bounceInDown'> Great! Thank you for submitting this form. I will get back to you shortly.</div>
+        </header>
+
+        <form method = 'POST' action = './index.html' class = 'redirectDiv'>
+            <p>You can head back to the main site</p>
+            <button class = 'btn'><a>Back to site</a></button>
+        </form>
+</body>
+<style>
+
+html, body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.9);   
+  }
+      
+  .bg-img {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    /* z-index: -1; */
+    top: 0;
+    left: 0;
+    background: url('./Site_img.jpg') no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+  
+  .mask{
+    position: static;
+    width: inherit;
+    height: inherit;
+    background: rgba(10, 10, 10, 0.9);
+    /* background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.9), rgba(0,0,0,0));  */
+    
+  }
+  
+  
+.headline {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.486);
+    font-weight: 800;
+    font-size: 40px;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.redirectDiv {
+    display: block;
+    position: relative;
+    z-index: 2;
+    top: 50vh;
+    text-align: center;
+    background: rgba(97, 92, 92, 0.514);
+    width: 50%;
+    margin: 0 auto;
+    border-top: 7px solid #a3e333;
+    padding: 0px 30px 70px;
+}
+
+.redirectDiv p {
+    font-size: 25px;
+    color: #000;
+    font-weight: 500;
+}
+
+.redirectDiv button {
+    background: #a3e333;
+    width: 150px;
+    height: 50px;
+    border-width: 0;
+    font-size: 12px;
+    cursor: pointer;
+}   
+
+.redirectDiv button:before {
+    content: '<';
+    font-size: 30px;
+    color: #000;
+    margin-right: 12px;
+}
+
+.redirectDiv button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+</style>
+
+</html>

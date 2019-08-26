@@ -20,10 +20,10 @@ html, body {
     grid-template-areas: 'nav-text nav-menu nav-menu'; 
     background: transparent;
     align-content: center;
-    transition: 2s ease;
+    transition: 1s ease;
   }
 
-
+ 
   
   .nav h1  {
     grid-area: nav-text;
@@ -41,7 +41,23 @@ html, body {
     grid-column: 2/4;
     text-align: center;
   }
-  
+ 
+  @media screen and (max-width: 800px) {
+    .nav {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-template-areas: 'nav-text nav-text nav-menu';  
+    }
+    .nav ul {
+      display: none;
+    }
+
+    .nav h1 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
   ul li.list-item {
     list-style: none;
     text-align: center;
@@ -99,6 +115,10 @@ html, body {
     text-align: center;
     margin: 0 auto;
   }
+
+  .headline em {
+    color: #a3e333;
+  }
   
   @media screen and (max-width: 675px) {
     .headline {
@@ -123,10 +143,22 @@ html, body {
   #main-desc {
     margin: 2vmin 0;
     font-size: 25px;
+    display: block;
+  }
+  
+  #main-desc p {
     text-align: center;
     line-height: 40px;
   }
 
+  #main-desc div {
+  text-align: center;
+}
+
+.moreBtn a {
+  text-decoration: none;
+  color: #000;
+}
   div.go_to_btn {
     position: fixed;
     bottom: 30px;
@@ -135,17 +167,17 @@ html, body {
     transform : translateX(-60%);
     width: 50px;
     height: 70px;
+    cursor: pointer;
   }
 
   div.go_to_btn span {
     text-align: center;
     cursor: pointer;
-
+    width: 100%;
   }
 
   div.go_to_btn span a {
     cursor: pointer;
-
   }
 
   #up-down {
@@ -177,6 +209,11 @@ html, body {
   font-size: 70px;
 }
 
+.grid_icons div {
+  text-align: center;
+}
+
+
 
 
 .about_me_text .text_1 {
@@ -190,7 +227,7 @@ html, body {
 
 @media screen and (max-width: 800px) {
   
-  #about_me_text .text_1 {
+  .about_me_text .text_1 {
     padding: 20px;
     font-size: 26px;
     line-height: 35px;
@@ -205,14 +242,14 @@ html, body {
 
 @media screen and (max-width: 400px) {
   
-  #about_me_text .text_1 {
-    padding: 20px;
-    font-size: 16px;
-    line-height: 15px;
+  .about_me_text .text_1 {
+    padding: 20px 5px;
+    font-size: 15px;
+    line-height: 20px;
     color: #fff;
   }
   
-  #about_me h2 {
+  .about_me h2 {
     font-size: 37px;
   }
   
@@ -264,6 +301,7 @@ html, body {
   cursor: pointer;
 
 }
+
 
 .btn-div {
   text-align: center;
