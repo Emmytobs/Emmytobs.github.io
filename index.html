@@ -5,91 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal Website</title>
-    <!-- Native Styles -->
-    <link rel="stylesheet" href="./style.css">
-    <!-- AOS library -->
-    <link rel="stylesheet" href="./Assets/aos.css">
     <!-- Animate.css library -->
     <link rel="stylesheet" href="./Assets/animate.css">
+    <!-- Native Styles -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav class = 'nav'>
-        <h1>Emmanuel otobo</h1>
-        <ul>
-            <li class = 'list-item'><a href="#home">Home</a></li>
-            <li class = 'list-item'><a href="#about_me">About Me</a></li>
-            <li class = 'list-item'><a href="#contact">Contact</a></li>
-        </ul>    
-    </nav>
 
-    <div id = 'nav'>
-        <header class = 'bg-img' id = 'home'>
-            <div class = 'mask'></div>
-            <!-- <div class = 'rect'></div> -->
-    <div class = 'headline animated bounceInDown'> Awesome coder <em>|</em> UI/UX designer <em>|</em> Front-end Web Developer</div>
-        </header>
-        
-        <div class="go_to_btn">
-            <span ><a href="#about_me"> <i class="fas fa-arrow-down" id = 'up-down' style = 'font-size: 30px; color: #fff;'></i> </a></span><br>
+    <header class="default-header">
+        <div>
+            <div class="profile-image-container">
+                <img src="./Assets/images/linkedIn-profile-img.png" alt="" class="profile-image">
+            </div>
+            <h1 class="headline">Hi, I'm Emmytobs...</h1>
         </div>
-
-        <section id = 'desc'>
-            <div id = 'blurb'>
-                
+    </header>
+        
+    <!-- <header class="shrinked-header">
+        <div>
+            <div class="profile-image-container">
+                <img src="./Assets/images/linkedIn-profile-img.png" alt="" class="profile-image">
             </div>
-            <div id = 'main-desc' data-aos = 'zoom-out' data-aos-anchor-placement ="top-center" >
-                <p>I create front-end web experiences like no other, leveraging the capabilities of tried-and-tested front-end web design patterns, and bringing an astonishing level of aesthetics on the web page .</p>
-                <div><button class = 'moreBtn btn'><a href="#about_me">Learn More</a></button></div>
-            </div>
-        </section>
+            <h1 class="headline">Hi, I'm Emmytobs...</h1>
+            <span class="menu">Open Menu ></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about-me">A little bit about me</a></li>
+                <li><a href="#tech-stack">Technologies i use</a></li>
+                <li><a href="#contact-me">Reach out to me!</a></li>
+            </ul>
+        </nav>
+    </header> -->
 
-        <section id="about_me" data-aos = 'fade-up' data-aos-anchor="#desc"  >
-            <h2>About Me</h2>
-            <div class="grid_icons">
-                <div><i class="fas fa-code" style = 'font-size: 50px; color: rgb(168, 153, 153)'></i></div>
-            </div>
-            <div class="about_me_text">
-                <p class = 'text_1'>
-                    I am a front-end web developer with a keen eye on designing performant websites and a strong passion for building web-based technologies. With nearly two years of learning how to build websites and architecture other web-based technologies, I have been able to leverage my new found skill to create things I certainly consider magical. I sincerely hope to work with you and help you to get your end-result.  While i mostly work on many fun coding projects, I do enjoy long beach walks and console gaming!            
-                </p>
+    <div class="content_wrapper">
 
-                <!-- 
-                <p class = 'text_2'>
-                    Check out some of my recently finished projects
-                </p>
-                 -->
-            </div>
-        </section>
-
-        <section id="contact">
-            <p >If you have any project(s) you want me to help create or any form of partnership you'll like me to be in, hit me up! I will love to hear from you.</p>
-            <form name = 'contact' method = 'POST' action = './form-submitted.html'  class = 'form_fields' netlify>
-                <input type="text" name = 'text' class = 'ff inputField'>
-                <input type="email" name = 'email' class = 'ff inputField'>
-                <textarea  name = 'message' id = 'textField' class = 'ff ' cols="30" rows="2"></textarea>
-                <div class = 'btn-div'><button class = 'submitBtn btn'>Submit</button></div>
-            </form>
-        </section>
-
+        <main>
     
-        </section>
-    <!--Section: Contact v.2-->
+            <!-- About me section -->
+            <section id="about-me">
+        
+                <div class="sectionContainer">
+                    <p>
+                        ...or Emmanuel Otobo (if you wanna know my real name).
+                        I architect full stack web applications using the hottest web technologies today.
+                    </p>
+                    <p>
+                        But first, a little bit about me: I am passionate about solving real-world problems using technology. With the skills i have acquired, I believe that I can creatively build solutions that can help individuals, businesses, and communities to achieve their greater goals
+                    </p>
+                    <p>
+                        One of my biggest goals is to be part of a team of engineers that leverages the power of technology to build software products that can make people get things done easier and to make life a bit more memorable <span>#technology_for_good</span> 
+                    </p>
+                </div>
+            </section>
+        
+            <!-- Technology Stack section -->
+            <section id="tech-stack">
+                <div class="sectionContainer">
+                    <p>
+                        With over two years of experience working as a web developer -- on the front-end and back-end -- I have created a portfolio of projects that you can check out on my GitHub (I'm always pushing out new projects *wink*)
+                    </p>
+                </div>
+            </section>
+        
+            <!-- Contact me section -->
+            <section id="contact-me">
+                <div class="sectionContainer">
+                    <div>
+                        <p>
+                            I am active in the developer community. Follow me on the different platforms if you wanna catch up with what I'm doing
+                        </p>
+                    </div>
+                    <div class="socials-container">
+                        <p>You can always reach out to me on:</p>
+                        <a href="#footer" title="Twitter profile" target="__blank">TW</a> | 
+                        <a href="https://github.com/Emmytobs" title="GitHub profile" target="__blank">GH</a> | 
+                        <a href="#" title="Instagram profile" target="__blank">IG</a> | 
+                        <a href="#" title="LinkedIn profile" target="__blank">LI</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <div class="asideContainer">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact me</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
 
 
-
-    <footer>
-       <div> <h3>Emmanuel Otobo</h3></div>
-       <div> <small>Made with <em><3</em>  from NG! </small></div>
+    <footer id="footer">
+        <div>
+            <h3>Emmanuel Otobo</h3>
+            <small>Made with <em><3</em>  from NG! </small>
+        </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/86ff87ebc2.js"></script>
-    <script src="./Assets/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./Assets/smooth-scroll.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
