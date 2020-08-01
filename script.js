@@ -1,4 +1,4 @@
-const listItems = document.querySelectorAll('aside li a');
+const listItems = document.querySelectorAll('div.menuContainer li a');
 
 // Function is called from the html markup
 const showActiveMenu = (target) => {
@@ -10,7 +10,7 @@ const showActiveMenu = (target) => {
 
     function addActiveClass(listItem) {
         clearActiveMenuItems();
-        const item = document.querySelector(`aside li a#${listItem}`)
+        const item = document.querySelector(`div.menuContainer li a#${listItem}`)
         item.className += " active";
     }
     switch(target.id) {
@@ -30,11 +30,23 @@ const showActiveMenu = (target) => {
 const header = document.querySelector('header');
 const endOfHeaderObserver = new IntersectionObserver((entries, observer) => {
     const sideBar = document.querySelector('aside');
+    // const defaultHeader = document.querySelector('header.default-header');
+    // const shrinkedHeader = document.querySelector('header.shrinked-header');
     entries.forEach(entry => {
         if(entry.isIntersecting) {
             sideBar.classList.remove('stickToTheTop');
+            /* Since shrinked header cannot be used for now
+             There is no need to show it on scroll
+            */
+            // shrinkedHeader.style.visibility = "hidden"
+            // defaultHeader.style.visibility = "visible"
             return;
         }
+        /* Since shrinked header cannot be used for now
+            There is no need to show it on scroll
+        */
+        // shrinkedHeader.style.visibility = "visible"
+        // defaultHeader.style.visibility = "hidden"
         sideBar.classList.add('stickToTheTop');
     })
 }, {
