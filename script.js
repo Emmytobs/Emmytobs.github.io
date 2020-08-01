@@ -2,17 +2,16 @@ const listItems = document.querySelectorAll('aside li a');
 
 // Function is called from the html markup
 const showActiveMenu = (target) => {
-    // console.log(target)
     function clearActiveMenuItems() {
         listItems.forEach(item => {
             item.className = item.className.replace(" active", " ");
         })
     }
-    // clearActiveMenuItems();
 
     function addActiveClass(listItem) {
+        clearActiveMenuItems();
         const item = document.querySelector(`aside li a#${listItem}`)
-        console.log(item);
+        item.className += " active";
     }
     switch(target.id) {
         case "about-me": 
@@ -25,7 +24,6 @@ const showActiveMenu = (target) => {
             addActiveClass(target.id);
             break;
     }
-    target.className += " active";
 }
 
 
@@ -55,7 +53,7 @@ const sectionObserver = new IntersectionObserver((entries, observer) => {
     })
 }, {
     rootMargin: "0px",
-    threshold: 0.5
+    threshold: 0.7
 })
 
 
